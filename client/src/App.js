@@ -24,7 +24,7 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const backendUrl = "http://localhost:4000/submit-form"; // Replace with your backend URL
+    const backendUrl = "https://customgform.onrender.com/submit-form"; // Replace with your backend URL
 
     try {
       const response = await axios.get(backendUrl, {
