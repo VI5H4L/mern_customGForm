@@ -1,0 +1,92 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body{
+  margin: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #222;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 16px; 
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 16px;
+}
+
+button:hover {
+  background-color: #e64c4c;
+}
+
+.message {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.success {
+  margin-top: 25px;
+  color: #52c41a;
+}
+
+.error {
+  margin-top: 25px;
+  color: #f5222d;
+}
+
+/* Responsiveness for smaller screens */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+}
