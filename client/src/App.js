@@ -24,7 +24,8 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const backendUrl = "https://customgform.onrender.com/submit-form"; // Replace with your backend URL
+    // const backendUrl = "https://customgform.onrender.com/submit-form"; 
+    const backendUrl = "https://custom-gform-backend.vercel.app/submit-form"; // Replace with your backend URL
 
     try {
       const response = await axios.get(backendUrl, {
